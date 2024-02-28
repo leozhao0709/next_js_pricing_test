@@ -2,13 +2,9 @@ import React from 'react';
 import { Post } from '../types/Post';
 import Link from 'next/link';
 
-// const fetchPost = async () => {
-//   return (await fetch('https://jsonplaceholder.typicode.com/posts')).json();
-// };
-
 export default async function Home() {
   const posts = (await (
-    await fetch('http://localhost:3000/api/posts/')
+    await fetch('https://jsonplaceholder.typicode.com/posts')
   ).json()) as Post[];
 
   return (
@@ -28,7 +24,7 @@ export default async function Home() {
 }
 
 // https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config
-// export const dynamic = 'auto';
+export const dynamic = 'auto';
 // export const dynamicParams = true;
 // export const revalidate = 60;
 // export const fetchCache = 'auto';
