@@ -12,9 +12,15 @@
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"],
-      "@tests/*": ["tests/*"],
-      "@root/*": ["./*"]
+      "@/*": [
+        "src/*"
+      ],
+      "@tests/*": [
+        "tests/*"
+      ],
+      "@root/*": [
+        "./*"
+      ]
     },
     "resolveJsonModule": true,
     "allowJs": true,
@@ -38,7 +44,11 @@
         "name": "next"
       }
     ],
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "noEmit": true,
     "isolatedModules": true
   },
@@ -48,7 +58,10 @@
     "e2e",
     "build-common-config",
     "build-tools",
-    "dist/types/**/*.ts"
+    "dist/types/**/*.ts",
+    ".next/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

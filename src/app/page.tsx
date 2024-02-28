@@ -24,7 +24,7 @@ export default async function Home() {
 }
 
 // https://nextjs.org/docs/app/api-reference/file-conventions/route-segment-config
-// export const dynamic = 'auto';
+export const dynamic = 'auto';
 // export const dynamicParams = true;
 // export const revalidate = 60;
 // export const fetchCache = 'auto';
